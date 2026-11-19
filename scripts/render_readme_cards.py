@@ -78,12 +78,69 @@ def render_activity(data):
     output = CARDS_DIR / "activity.svg"
     output.write_text(svg, encoding="utf-8")
     print(f"Generated: {output}")
+def render_streak(data):
+    current = data.get("current_streak", 0)
+    longest = data.get("longest_streak", 0)
+    active = data.get("active_days", 0)
+    busiest = data.get("busiest_day", "Not available")
 
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg"
+      width="900" height="240" viewBox="0 0 900 240">
+
+      <defs>
+        <linearGradient id="streakBg">
+          <stop stop-color="#111827"/>
+          <stop offset="1" stop-color="#312E81"/>
+        </linearGradient>
+      </defs>
+
+      <rect width="900" height="240" rx="22"
+        fill="url(#streakBg)"/>
+
+      <text x="40" y="50" fill="#A5B4FC"
+        font-size="16" font-family="Arial">
+        CONTRIBUTION STREAK
+      </text>
+
+      <text x="40" y="115" fill="white"
+        font-size="38" font-weight="bold"
+        font-family="Arial">{current}</text>
+      <text x="40" y="145" fill="#CBD5E1"
+        font-size="15" font-family="Arial">
+        Current streak
+      </text>
+
+      <text x="330" y="115" fill="#FBBF24"
+        font-size="38" font-weight="bold"
+        font-family="Arial">{longest}</text>
+      <text x="330" y="145" fill="#CBD5E1"
+        font-size="15" font-family="Arial">
+        Longest streak
+      </text>
+
+      <text x="620" y="115" fill="#67E8F9"
+        font-size="38" font-weight="bold"
+        font-family="Arial">{active}</text>
+      <text x="620" y="145" fill="#CBD5E1"
+        font-size="15" font-family="Arial">
+        Active days
+      </text>
+
+      <text x="40" y="200" fill="#94A3B8"
+        font-size="14" font-family="Arial">
+        Busiest contribution weekday: {busiest}
+      </text>
+    </svg>'''
+
+    output = CARDS_DIR / "streak.svg"
+    output.write_text(svg, encoding="utf-8")
+    print(f"Generated: {output}")
 
 def main():
     CARDS_DIR.mkdir(parents=True, exist_ok=True)
     data = load_data()
     render_activity(data)
+    render_streak(data)
     print("SVG card generation completed!")
 
 
