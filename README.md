@@ -25,7 +25,9 @@
 - Enjoy building practical projects and exploring new technologies.
 
 ## TECH STACK
-
+<div align="center">
+  <img src="./cards/skills.svg" width="100%" alt="Vignesh technology stack"/>
+</div>
 <p align="center">
 <img src="https://skillicons.dev/icons?i=python,mysql,git,github,vscode" />
 </p>
