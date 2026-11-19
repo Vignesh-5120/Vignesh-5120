@@ -48,11 +48,14 @@ An academic project exploring automated machine learning workflows and model sel
 
 ## GITHUB STATISTICS
 
+
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Vignesh-5120&show_icons=true&theme=transparent&hide_border=true&title_color=3B82F6&icon_color=3B82F6" />
+<img src="https://github-readme-stats.vercel.app/api?username=Vignesh-5120&show_icons=true&theme=transparent&hide_border=true&title_color=38BDF8&icon_color=6366F1&text_color=C9D1D9" height="170" alt="GitHub statistics"/>
 
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vignesh-5120&layout=compact&theme=transparent&hide_border=true&title_color=3B82F6" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Vignesh-5120&theme=transparent&hide_border=true&ring=38BDF8&fire=6366F1&currStreakLabel=38BDF8" height="170" alt="GitHub contribution streak"/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vignesh-5120&layout=compact&theme=transparent&hide_border=true&title_color=38BDF8&text_color=C9D1D9" height="140" alt="Most used languages"/>
 
 </div>
 
