@@ -57,17 +57,9 @@ An academic project exploring automated machine learning workflows and model sel
 ## CONTRIBUTION ACTIVITY
 
 <div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Vignesh-5120&theme=github-compact&hide_border=true&area=true" width="100%" />
-
-</div>
-
----
-
-<div align="center">
-
-### JUST THE WAY I AM.
-
-*Learning • Building • Improving*
-
+  <img
+    src="https://github-readme-activity-graph.vercel.app/graph?username=Vignesh-5120&bg_color=080B14&color=60A5FA&line=38BDF8&point=FFFFFF&area=true&hide_border=true"
+    width="100%"
+    alt="Vignesh GitHub contribution activity"
+  />
 </div>
