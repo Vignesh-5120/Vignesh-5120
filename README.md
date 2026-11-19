@@ -1,4 +1,6 @@
-
+<div align="center">
+  <img src="./cards/hero.svg" width="100%" alt="Vignesh animated profile banner"/>
+</div>
 <div align="center">
 
 # VIGNESH
