@@ -60,11 +60,7 @@ An academic project exploring automated machine learning workflows and model sel
 </div>
 
 ## CONTRIBUTION ACTIVITY
-
-<div align="center">
-  <img
-    src="https://github-readme-activity-graph.vercel.app/graph?username=Vignesh-5120&bg_color=080B14&color=60A5FA&line=38BDF8&point=FFFFFF&area=true&hide_border=true"
-    width="100%"
-    alt="Vignesh GitHub contribution activity"
-  />
-</div>
+<p align="center">
+  <img src="./cards/activity.svg" width="100%" alt="GitHub Activity"/>
+  <img src="./cards/streak.svg" width="100%" alt="Contribution Streak"/>
+</p>
