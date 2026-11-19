@@ -33,7 +33,9 @@
 </p>
 
 ## PROJECTS
-
+<div align="center">
+  <img src="./cards/projects.svg" width="100%" alt="Vignesh featured projects"/>
+</div>
 ### Agronova
 Arecanut Price Prediction using Machine Learning and GenAI reasoning.
 
