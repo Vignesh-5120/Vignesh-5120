@@ -135,12 +135,79 @@ def render_streak(data):
     output = CARDS_DIR / "streak.svg"
     output.write_text(svg, encoding="utf-8")
     print(f"Generated: {output}")
+def render_heatmap(data):
+    days = data.get("weeks", [])
 
+   cell = 11
+   gap = 3
+   start_x = 70
+   start_y = 62
+
+    colors = [
+        "#161B22",
+        "#0E4429",
+        "#006D32",
+        "#26A641",
+        "#39D353"
+    ]
+
+    squares = []
+
+    for index, day in enumerate(days):
+        weekday = day.get("weekday", 0)
+       week = (index + days[0].get("weekday", 0)) // 7
+
+        x = start_x + week * (cell + gap)
+        y = start_y + weekday * (cell + gap)
+
+        count = day.get("count", 0)
+
+        if count == 0:
+            color = colors[0]
+        elif count <= 2:
+            color = colors[1]
+        elif count <= 5:
+            color = colors[2]
+        elif count <= 9:
+            color = colors[3]
+        else:
+            color = colors[4]
+
+        squares.append(
+            f'<rect x="{x}" y="{y}" width="{cell}" '
+            f'height="{cell}" rx="2" fill="{color}">'
+            f'<title>{day.get("date", "")}: {count} contributions</title>'
+            f'</rect>'
+        )
+
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg"
+      width="900" height="195" viewBox="0 0 900 195"
+
+      <rect width="900" height="180" rx="18"
+        fill="#080B14"/>
+
+      <text x="35" y="35" fill="#60A5FA"
+        font-size="16" font-family="Arial">
+        CONTRIBUTION HEATMAP
+      </text>
+
+      {''.join(squares)}
+
+      <text x="70" y="178" fill="#94A3B8"
+        font-size="12" font-family="Arial">
+        Last 365 days of GitHub activity
+      </text>
+    </svg>'''
+
+    output = CARDS_DIR / "heatmap.svg"
+    output.write_text(svg, encoding="utf-8")
+    print(f"Generated: {output}")
 def main():
     CARDS_DIR.mkdir(parents=True, exist_ok=True)
     data = load_data()
     render_activity(data)
     render_streak(data)
+    render_heatmap(data)
     print("SVG card generation completed!")
 
 
