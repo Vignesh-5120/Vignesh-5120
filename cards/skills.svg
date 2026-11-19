@@ -1,0 +1,40 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="300" viewBox="0 0 900 300">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#080B14"/>
+      <stop offset="1" stop-color="#14213D"/>
+    </linearGradient>
+    <linearGradient id="blue">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#6366F1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="300" rx="22" fill="url(#bg)"/>
+  <rect x="1" y="1" width="898" height="298" rx="21" stroke="#263B65"/>
+
+  <text x="40" y="55" fill="#60A5FA" font-size="15" font-family="monospace" letter-spacing="4">MY TECHNOLOGY STACK</text>
+  <text x="40" y="91" fill="white" font-size="27" font-weight="bold" font-family="Arial">Tools I Learn &amp; Build With</text>
+
+  <g font-family="Arial" font-size="19" font-weight="bold" text-anchor="middle">
+    <rect x="40" y="125" width="245" height="58" rx="12" fill="#17243C" stroke="#38BDF8"/>
+    <text x="162" y="161" fill="#7DD3FC">PYTHON</text>
+
+    <rect x="327" y="125" width="245" height="58" rx="12" fill="#17243C" stroke="#6366F1"/>
+    <text x="449" y="161" fill="#A5B4FC">SQL</text>
+
+    <rect x="614" y="125" width="245" height="58" rx="12" fill="#17243C" stroke="#38BDF8"/>
+    <text x="736" y="161" fill="#7DD3FC">MACHINE LEARNING</text>
+
+    <rect x="40" y="205" width="390" height="58" rx="12" fill="#17243C" stroke="#6366F1"/>
+    <text x="235" y="241" fill="#A5B4FC">ARTIFICIAL INTELLIGENCE</text>
+
+    <rect x="470" y="205" width="389" height="58" rx="12" fill="#17243C" stroke="#38BDF8"/>
+    <text x="664" y="241" fill="#7DD3FC">GIT &amp; GITHUB</text>
+  </g>
+
+  <circle cx="855" cy="40" r="5" fill="#38BDF8">
+    <animate attributeName="opacity" values=".2;1;.2" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>
