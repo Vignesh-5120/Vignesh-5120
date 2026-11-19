@@ -49,7 +49,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data/contributions.json cards/activity.svg
+          git add data/contributions.json cards/activity.svg cards/streak.svg
 
           if ! git diff --cached --quiet; then
             git commit -m "Update animated GitHub profile cards"
