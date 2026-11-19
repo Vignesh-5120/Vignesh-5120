@@ -1,0 +1,39 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="390" viewBox="0 0 900 390">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#080B14"/>
+      <stop offset="1" stop-color="#14213D"/>
+    </linearGradient>
+    <linearGradient id="accent">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#6366F1"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="390" rx="24" fill="url(#bg)"/>
+  <rect x="1" y="1" width="898" height="388" rx="23" stroke="#263B65"/>
+
+  <text x="40" y="55" fill="#60A5FA" font-family="monospace" font-size="14" letter-spacing="4">SELECTED WORK</text>
+  <text x="40" y="91" fill="white" font-family="Arial" font-size="29" font-weight="bold">Projects &amp; Experiments</text>
+
+  <rect x="35" y="120" width="830" height="108" rx="15" fill="#111D32" stroke="#2563EB"/>
+  <rect x="35" y="120" width="5" height="108" rx="2" fill="#38BDF8"/>
+  <text x="62" y="155" fill="#7DD3FC" font-family="monospace" font-size="13">PROJECT 01</text>
+  <text x="62" y="184" fill="white" font-family="Arial" font-size="23" font-weight="bold">AGRONOVA</text>
+  <text x="62" y="207" fill="#94A3B8" font-family="Arial" font-size="14">Arecanut price prediction using ML &amp; GenAI</text>
+  <rect x="715" y="158" width="115" height="32" rx="16" fill="#172D4C"/>
+  <text x="772" y="179" text-anchor="middle" fill="#7DD3FC" font-family="Arial" font-size="12">AI / ML</text>
+
+  <rect x="35" y="248" width="830" height="108" rx="15" fill="#111D32" stroke="#6366F1"/>
+  <rect x="35" y="248" width="5" height="108" rx="2" fill="#818CF8"/>
+  <text x="62" y="283" fill="#A5B4FC" font-family="monospace" font-size="13">PROJECT 02</text>
+  <text x="62" y="312" fill="white" font-family="Arial" font-size="23" font-weight="bold">AUTOML</text>
+  <text x="62" y="335" fill="#94A3B8" font-family="Arial" font-size="14">Exploring automated machine learning workflows</text>
+  <rect x="715" y="286" width="115" height="32" rx="16" fill="#25264D"/>
+  <text x="772" y="307" text-anchor="middle" fill="#A5B4FC" font-family="Arial" font-size="12">MACHINE LEARNING</text>
+
+  <circle cx="840" cy="55" r="5" fill="#38BDF8">
+    <animate attributeName="opacity" values=".2;1;.2" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>
